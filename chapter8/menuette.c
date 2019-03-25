@@ -5,11 +5,9 @@ int get_int(void);
 void count(void);
 int main(void)
 {
-    printf("go\n");
     int choice;
-//    void count(void);
 
-    printf("Go\n");
+    // 如果 get_choice()返回的值為 'q' 則退出循環
     while ((choice = get_choice()) != 'q')
     {
         switch (choice)
@@ -37,7 +35,7 @@ void count(void)
 {
     int n, i;
 
-    printf("Count no far? Enter an integer:\n");
+    printf("Count how far? Enter an integer:\n");
     n = get_int();
     for (i = 1; i <= n; i++)
     {
@@ -53,7 +51,7 @@ char get_choice(void)
     int ch;
     printf("Enter the letter of your choice:\n");
     printf("a. advice        b. bell\n");
-    printf("c. count         q.quit.\n");
+    printf("c. count         q. quit\n");
     ch = get_first();
     while ((ch < 'a' || ch > 'c') && ch != 'q')
     {
