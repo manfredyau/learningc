@@ -11,7 +11,6 @@ void show_n_char(char ch, int num);
 int main(void)
 {
     int spaces;
-
     show_n_char('*', WIDTH);
     putchar('\n');
     show_n_char(SPACE, 12);

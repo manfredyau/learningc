@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
+int smile(int);
 int main(void)
 {
-    int ch;
-
-    printf("Please enter a letter: \n");
-
-    while ((ch = getchar()) != EOF)
-    {
-        printf("%d,\n", isalpha(ch));
-    }
-
-    printf("FINISH");
+    smile(-1);
     return 0;
+}
+
+int smile(int n)
+{
+    printf("Smile!");
+    if (n != 1) return smile(n - 1);
+    return printf("\n");
 }
