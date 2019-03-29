@@ -3,13 +3,9 @@ project(Learning)
 
 set(CMAKE_CXX_STANDARD 14)
 
+add_executable(one chapter9/hotel.c chapter9/usehotel.c)
 
-
-add_executable(lethead1 chapter9/lethead1.c)
-add_executable(lethead2 chapter9/lethead2.c)
-add_executable(lesser chapter9/lesser.c)
-add_executable(recur chapter9/recur.c)
-add_executable(test test/test.c)
-add_executable(Exercise7 chapter2/Exercise7.c)
-add_executable(factor chapter9/factor.c)
-add_executable(binary chapter9/binary.c)
+add_executable(test test/a.c test/test.c)
+add_executable(loccheck chapter9/loccheck.c)
+add_executable(swap1 chapter9/swap1.c)
+add_executable(swap3 chapter9/swap3.c)
