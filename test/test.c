@@ -3,9 +3,30 @@
 #include <string.h>
 #include "a.h"
 
+void c(int []);
+
+void a(int ar[][4])
+{
+    printf("%d\n", ar[0][3]);
+    printf("function\n");
+}
+
+void b(int a[][2])
+{
+
+}
+
+void d(int a, int b, int arr[a][b])
+{
+
+}
+
 int main(void)
 {
-    int sq[2][3] = {5, 6, 7, 8};
-    printf("%d\n", sq[0][2]);
+    int arr[2][3] = {
+            {1, 2, 3},
+            {4, 5, 6}
+    };
+    d(10, 10, arr);
     return 0;
 }
