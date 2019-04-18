@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
-int main(void)
-{
-    char str[100];
-    printf("%p\n", str);
-    printf("%p\n", gets(str));
+#include <ctype.h>
+int main(void) {
+    char s1[] = "abcd";
+    char s2[] = "b";
+    printf("%p\n", strstr(s1, "cde"));
+    printf("%p\n", s1);
     return 0;
 }

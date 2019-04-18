@@ -1,1 +1,2 @@
-int put2(const char *);
+#include <stdio.h>
+char *s_gets(char *, int);
