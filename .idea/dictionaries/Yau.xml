@@ -3,6 +3,7 @@
     <words>
       <w>dereferenced</w>
       <w>inttypes</w>
+      <w>strlen</w>
     </words>
   </dictionary>
 </component>
