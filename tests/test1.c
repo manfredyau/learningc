@@ -3,18 +3,12 @@
 #include <ctype.h>
 #include <time.h>
 #include <stdlib.h>
-int abc = 9;
 int main(void)
 {
-    FILE *fp;
-    fp = fopen("file.txt", "r+");
-
-    putchar(getc(fp));
-    putchar(getc(fp));
-    ungetc('H', fp);
-//    fseek(fp, 0L, SEEK_SET);
-//    putchar(getc(fp));
-    putchar(getc(fp));
+    int arr[] = {1,2,3,4,5};
+    void *arr2 = arr;
+    printf("%zd\n", sizeof(void) );
+    printf("%d\n", arr2 + 1 );
     return 0;
 }
 
