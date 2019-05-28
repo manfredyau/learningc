@@ -80,8 +80,8 @@ int main(void)
         {
             printf("%s by %s: $%.2f\n", library[index].title,
                    library[index].author, library[index].value);
-            fwrite(&library[filecount], size, count - filecount, pbooks);
         }
+        fwrite(&library[filecount], size, count - filecount, pbooks);
     } else
     {
         puts("No books? Too bad.\n");
