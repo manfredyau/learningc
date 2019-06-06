@@ -4,6 +4,6 @@
 #define PR2(...) printf(__VA_ARGS__)
 int main(void)
 {
-    PR2("A%s,%s", "B", "C");
+    PR("A", "____HELLO_WORLD %d \n\n\n",13);
     return 0;
 }
